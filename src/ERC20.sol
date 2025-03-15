@@ -6,8 +6,8 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 contract DurantToke is ERC20, Ownable {
     constructor(
-        string memory _name, 
-        string memory _symbol, 
+        string memory _name,
+        string memory _symbol,
         uint _totalSupply,
         address _owner
     ) ERC20(_name, _symbol) Ownable(_owner) {

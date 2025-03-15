@@ -13,7 +13,7 @@ contract CounterTest is Test {
 
   
     function testFuzz_DeployErc20() public {
-        factoryContract.deployErc20("DurantToken", "DUR", address(this), 1000);
+        factoryContract.deployErc20("DurantToken", "DUR",  1000);
         assertEq(factoryContract.deployedErc20Count(), 1);
     }
     
